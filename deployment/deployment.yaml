@@ -1,1 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: titanic-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: titanic
+  template:
+    metadata:
+      labels:
+        app: titanic
+    spec:
+      containers:
+      - name: titanic-container
+        image: wolfpackstatmathieu/application-correction:dev
+        ports:
+        - containerPort: 8000
 

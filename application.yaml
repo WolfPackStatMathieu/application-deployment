@@ -6,7 +6,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/WolfPackStatMathieu/application-deployment.git
-    targetRevision: main
+    targetRevision: dev
     path: deployment
   destination:
     server: https://kubernetes.default.svc
